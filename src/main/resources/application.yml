@@ -1,0 +1,4 @@
+app:
+  weather:
+    api-key: ${WEATHER_API_KEY:key}
+    url: https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s

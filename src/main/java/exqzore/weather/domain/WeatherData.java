@@ -1,0 +1,20 @@
+package exqzore.weather.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class WeatherData {
+
+  private List<WeatherInfo> weather;
+  private WeatherMainInfo main;
+  private WeatherWindInfo wind;
+}
